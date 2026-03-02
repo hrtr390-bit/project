@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 align="center">تسجيل الدخول</h1>
+    </header>
+    <main>
+        <form action="The Shop.html" method="post">
+            <!-- List-input -->
+            <fieldset>
+             <legend>
+                أكتب بيناتك هنا
+             </legend>
+             <label for="name">إسم المستخدم</label>
+            <input type="text" class="input-information" name="Name" id="name" required   placeholder="أكتب إسمك"><br> <br>
+            <label for="number">رقم الهاتف</label>
+            <input type="tel"  class="input-information" name="phone " id="number" pattern="[0-9]{11}" placeholder="أكتب رقم الهاتف" required maxlength="11" inputmode="numeric"> <br> <br>
+            <label for="email">الإيميل</label>
+            <input type="email"  class="input-information" name="email" id="email" placeholder="أكتب الإيميل" required> <br> <br>
+            <label for="password">الرقم السري</label>
+            <input type="password" class="input-information" name="password" id="password" required placeholder="أكتب الرقم السري"> <br> <br>
+            </fieldset>
+            <!-- List-kind -->
+             <fieldset>
+                <legend>
+                    النوع
+                </legend>
+                <label for="male">ذكر</label>
+                <input type="radio" name="kind" id="male" value="male" required > <br> <br>
+                <label for="female">أُنثي</label>
+                <input type="radio" name="kind" id="female" value="female" required> <br> <br>
+             </fieldset>
+             <!-- List-hobbies -->
+              <fieldset>
+                <legend>
+                    الهواية
+                </legend>
+                <label for="sports">يحب الرياضة</label>
+                <input type="checkbox" name="hobbies" id="sports" value="sports"> <br> <br>
+                <label for="reading">يحب القراءة</label>
+                <input type="checkbox" name="hobbies" id="reading" value="reading" > <br> <br>
+                <label for="music">أحب إستماع الموسيقي</label>
+                <input type="checkbox" name="hobbies" id="music" value="music" > <br> <br>
+              </fieldset>
+              <!-- rating -->
+               <fieldset>
+                <legend>
+                    التقييم
+                </legend>
+                <label for="rating"> قيمنا</label>
+                <select name="rating" id="rating" required>
+                    <option value="">إختر...</option>
+                    <option value="1">1-ممتاز </option>
+                     <option value="1">2-جيد جداً</option>
+                      <option value="1">3-جيد</option>
+                       <option value="1">4-سيء</option>
+                </select>
+               </fieldset>
+                <!-- write-rating -->
+              <fieldset><legend>
+                أكتب رأيك
+              </legend>
+              <label for="opinion">رأيك</label>
+                <textarea name="opinion" id="opinion" cols="40" rows="10"></textarea>
+                </fieldset>
+                <button type="submit"> دخول المحل</button>
+        </form>
+    </main>
+    
+</body>
+</html>
